@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Up 2025 | Salud Mental Joven</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #f8fafc;
+        }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 50%, #f0fdfa 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(40px);
+            z-index: 0;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class="text-slate-600 antialiased overflow-x-hidden">
+
+    <!-- Decorative Blobs Background -->
+    <div class="blob bg-blue-300 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="blob bg-teal-300 w-96 h-96 rounded-full bottom-0 right-0 translate-x-1/3 translate-y-1/3"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav fixed w-full z-50 border-b border-white/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="bg-gradient-to-tr from-teal-500 to-blue-500 p-2 rounded-xl text-white shadow-lg">
+                        <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-slate-800">Mind Up</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="#necessitat" class="text-slate-500 hover:text-teal-600 transition-colors py-2">El Problema</a>
+                    <a href="#solucio" class="text-slate-500 hover:text-teal-600 transition-colors py-2">La Solución</a>
+                    <a href="#beneficis" class="text-slate-500 hover:text-teal-600 transition-colors py-2">Beneficios</a>
+                    <a href="#impacte" class="text-slate-500 hover:text-teal-600 transition-colors py-2">Datos 2025</a>
+                    <a href="#equip" class="text-slate-500 hover:text-teal-600 transition-colors py-2">Equipo</a>
+                    <a href="#video-pitch" class="bg-slate-900 text-white px-5 py-2 rounded-full hover:bg-slate-800 transition shadow-md">
+                        Ver Pitch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient pt-32 pb-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 border border-white/50 shadow-sm mb-8 animate-fade-in-up">
+                <span class="w-2 h-2 rounded-full bg-teal-500"></span>
+                <span class="text-sm font-semibold text-teal-700 tracking-wide">PROYECTO DE INNOVACIÓN SOCIAL 2025</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 leading-tight tracking-tight">
+                El estrés académico no debe <br> frenarte. <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600">Mind Up te impulsa.</span>
+            </h1>
+            
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Una app creada por jóvenes y para jóvenes. Rompemos el estigma de la salud mental en las aulas y te ofrecemos herramientas reales para gestionar la presión.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#solucio" class="flex items-center justify-center gap-2 bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Descubre el Proyecto
+                    <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+                <a href="#video-pitch" class="flex items-center justify-center gap-2 bg-white text-slate-700 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition border border-slate-200 shadow-sm hover:shadow-md">
+                    <i data-lucide="play-circle" class="w-5 h-5 text-teal-600"></i>
+                    Ver Vídeo
+                </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto border-t border-slate-200/60 pt-12">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-slate-900 mb-1">1 de 4</div>
+                    <div class="text-sm text-slate-500 font-medium uppercase tracking-wider">Estudiantes con ansiedad</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-slate-900 mb-1">24/7</div>
+                    <div class="text-sm text-slate-500 font-medium uppercase tracking-wider">Apoyo emocional</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-slate-900 mb-1">100%</div>
+                    <div class="text-sm text-slate-500 font-medium uppercase tracking-wider">Anónimo y Seguro</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- NECESSITAT (PERTINENÇA) -->
+        <section id="necessitat" class="py-24 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="bg-rose-50 rounded-3xl p-8 relative">
+                            <div class="absolute -top-6 -left-6 bg-white p-4 rounded-2xl shadow-xl">
+                                <i data-lucide="bar-chart-2" class="w-8 h-8 text-rose-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-4 mt-4">Una pandemia silenciosa</h3>
+                            <p class="mb-4">"No puedo más con la selectividad". Esta frase resuena en miles de hogares. El estrés académico se ha convertido en la principal causa de malestar entre los 14 y los 20 años.</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="x-circle" class="text-rose-400 w-5 h-5"></i>
+                                    <span>Servicios de orientación saturados</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="x-circle" class="text-rose-400 w-5 h-5"></i>
+                                    <span>Psicología privada inasequible</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i data-lucide="x-circle" class="text-rose-400 w-5 h-5"></i>
+                                    <span>Miedo a ser juzgado (Estigma)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <span class="text-teal-600 font-bold tracking-wider uppercase text-sm">Necesidad y Pertinencia</span>
+                        <h2 class="text-4xl font-bold text-slate-900 mt-3 mb-6">¿Por qué ahora? ¿Por qué Mind Up?</h2>
+                        <div class="prose prose-lg text-slate-600 text-justify">
+                            <p>
+                                El sistema educativo se centra en el logro académico pero olvida el acompañamiento emocional. Los jóvenes nativos digitales no encuentran respuestas en los canales tradicionales.
+                            </p>
+                            <p>
+                                <strong>Nuestra misión</strong> es cubrir el vacío existente entre el estudiante estresado y la ayuda profesional. Si no actuamos, el estrés puntual puede derivar en fracaso escolar, aislamiento o trastornos crónicos. Mind Up es la respuesta inmediata y accesible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUCIÓ (SOSTENIBILITAT) -->
+        <section id="solucio" class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-teal-600 font-bold tracking-wider uppercase text-sm">Nuestra Propuesta</span>
+                    <h2 class="text-4xl font-bold text-slate-900 mt-3">Un Coach Emocional de Bolsillo</h2>
+                    <p class="text-lg text-slate-600 mt-4">Mind Up es una app basada en terapia cognitivo-conductual y gamificación. Es sostenible, escalable y diseñada para la vida real.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                        <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+                            <i data-lucide="smile" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Check-in Diario</h3>
+                        <p class="text-slate-600">Registro de emociones rápido e intuitivo. La IA detecta patrones de estrés antes de que se conviertan en un problema.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                        <div class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center text-teal-600 mb-6">
+                            <i data-lucide="life-buoy" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Botón SOS Académico</h3>
+                        <p class="text-slate-600">¿Bloqueo antes de un examen? Acceso directo a ejercicios de respiración y relajación de 3 minutos.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                        <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 mb-6">
+                            <i data-lucide="users" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Comunidad Segura</h3>
+                        <p class="text-slate-600">Foros anónimos moderados por profesionales. Comparte experiencias sin miedo a ser juzgado.</p>
+                    </div>
+                </div>
+
+                <!-- Sostenibilitat Box -->
+                <div class="mt-12 bg-slate-900 rounded-3xl p-8 md:p-12 text-white overflow-hidden relative">
+                    <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 flex items-center gap-3">
+                                <i data-lucide="leaf" class="text-green-400"></i>
+                                ¿Cómo lo hacemos sostenible?
+                            </h3>
+                            <p class="text-slate-300 mb-6">
+                                Utilizamos un modelo híbrido <strong>B2B2C</strong> para garantizar el acceso universal:
+                            </p>
+                            <ul class="space-y-4">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle-2" class="text-teal-400 mt-1"></i>
+                                    <span><strong>Centros Educativos:</strong> Institutos pagan una licencia anual como parte del Plan de Acción Tutorial.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle-2" class="text-teal-400 mt-1"></i>
+                                    <span><strong>Alumnos (Gratis):</strong> El usuario final no paga, eliminando barreras económicas.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/10">
+                            <div class="text-sm font-semibold text-teal-300 uppercase tracking-wide mb-2">Impacto Esperado</div>
+                            <div class="text-4xl font-bold mb-1">Coste Cero</div>
+                            <div class="text-slate-300 text-sm">Para el estudiante y su familia.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIS (ORIGINALITAT) -->
+        <section id="beneficis" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-12 gap-12">
+                    <div class="md:col-span-5">
+                        <span class="text-teal-600 font-bold tracking-wider uppercase text-sm">Beneficios y Originalidad</span>
+                        <h2 class="text-4xl font-bold text-slate-900 mt-3 mb-6">Más que una app, un cambio de mentalidad</h2>
+                        <p class="text-lg text-slate-600 mb-6">
+                            A diferencia de apps de meditación genéricas, Mind Up habla tu idioma. Entiende qué es la selectividad, los exámenes finales y la presión de grupo.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 rounded-full bg-teal-50 flex-shrink-0 flex items-center justify-center text-teal-600">
+                                    <i data-lucide="shield-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Prevención Activa</h4>
+                                    <p class="text-sm text-slate-500">No esperamos al problema. Actuamos antes.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-12 h-12 rounded-full bg-teal-50 flex-shrink-0 flex items-center justify-center text-teal-600">
+                                    <i data-lucide="graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Contexto Educativo</h4>
+                                    <p class="text-sm text-slate-500">Recursos específicos para la vida escolar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Prototype Visual -->
+                    <div class="md:col-span-7 bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl p-8 flex items-center justify-center shadow-inner">
+                        <div class="bg-white rounded-[2.5rem] p-4 shadow-2xl w-64 border-8 border-slate-800">
+                            <!-- Mobile Screen Mockup -->
+                            <div class="bg-slate-50 rounded-[2rem] h-96 overflow-hidden relative flex flex-col">
+                                <div class="bg-teal-600 h-32 p-4 text-white">
+                                    <div class="text-xs opacity-70 mb-1">Hola, David 👋</div>
+                                    <div class="font-bold text-lg">¿Cómo te sientes hoy?</div>
+                                </div>
+                                <div class="p-4 -mt-6">
+                                    <div class="bg-white rounded-xl shadow-sm p-3 mb-3 flex items-center gap-3">
+                                        <div class="bg-orange-100 p-2 rounded-lg text-xl">😰</div>
+                                        <div class="text-xs font-bold text-slate-700">Nervioso</div>
+                                    </div>
+                                    <div class="bg-white rounded-xl shadow-sm p-3 mb-3 flex items-center gap-3">
+                                        <div class="bg-blue-100 p-2 rounded-lg text-xl">😔</div>
+                                        <div class="text-xs font-bold text-slate-700">Cansado</div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class="text-[10px] font-bold text-slate-400 uppercase mb-2">Recomendado para ti</div>
+                                        <div class="bg-teal-50 border border-teal-100 rounded-xl p-3">
+                                            <div class="text-xs font-bold text-teal-800">Respiración 4-7-8</div>
+                                            <div class="text-[10px] text-teal-600">3 min • Relajación</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DADES IMPACTE 2025 (New Section) -->
+        <section id="impacte" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+            <!-- Background detail -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-teal-600 rounded-full blur-3xl opacity-20"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="text-teal-400 font-bold tracking-wider uppercase text-sm">Proyección y Metas</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-3">Objetivos de Impacto 2025</h2>
+                    <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Datos estimados para el primer año de implementación basados en la prueba piloto.</p>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div class="p-8 bg-slate-800/50 backdrop-blur border border-slate-700 rounded-3xl hover:border-teal-500/50 transition duration-300">
+                        <div class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-teal-400 to-emerald-400 mb-2">5k+</div>
+                        <div class="text-lg font-semibold text-white">Alumnos Impactados</div>
+                        <div class="text-xs text-slate-500 mt-2">En el primer curso escolar</div>
+                    </div>
+                    <div class="p-8 bg-slate-800/50 backdrop-blur border border-slate-700 rounded-3xl hover:border-blue-500/50 transition duration-300">
+                        <div class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-indigo-400 mb-2">15</div>
+                        <div class="text-lg font-semibold text-white">Institutos Adheridos</div>
+                        <div class="text-xs text-slate-500 mt-2">Red de centros piloto</div>
+                    </div>
+                    <div class="p-8 bg-slate-800/50 backdrop-blur border border-slate-700 rounded-3xl hover:border-purple-500/50 transition duration-300">
+                        <div class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-purple-400 to-pink-400 mb-2">-40%</div>
+                        <div class="text-lg font-semibold text-white">Reducción de Ansiedad</div>
+                        <div class="text-xs text-slate-500 mt-2">Objetivo clínico medible</div>
+                    </div>
+                    <div class="p-8 bg-slate-800/50 backdrop-blur border border-slate-700 rounded-3xl hover:border-orange-500/50 transition duration-300">
+                        <div class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-orange-400 to-amber-400 mb-2">4.8</div>
+                        <div class="text-lg font-semibold text-white">Satisfacción Usuarios</div>
+                        <div class="text-xs text-slate-500 mt-2">Valoración media (sobre 5)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COL·LABORACIÓ -->
+        <section class="py-20 border-y border-slate-100 bg-white">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <span class="text-slate-400 text-sm font-semibold uppercase tracking-widest mb-8 block">Con la colaboración y apoyo de</span>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                    <!-- Logos placeholders -->
+                    <div class="flex flex-col items-center gap-2">
+                        <i data-lucide="building-2" class="w-10 h-10"></i>
+                        <span class="font-bold">COPC</span>
+                        <span class="text-xs">Colegio Psicología</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i data-lucide="users-2" class="w-10 h-10"></i>
+                        <span class="font-bold">Asoc. Estudiantes</span>
+                        <span class="text-xs">Beta-testers</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i data-lucide="school" class="w-10 h-10"></i>
+                        <span class="font-bold">Institutos Piloto</span>
+                        <span class="text-xs">Prueba piloto</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <i data-lucide="award" class="w-10 h-10"></i>
+                        <span class="font-bold">Dept. Educación</span>
+                        <span class="text-xs">Apoyo Institucional</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section id="video-pitch" class="py-24 bg-slate-50 text-slate-900 relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 relative z-10 text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-8">Nuestra historia en 90 segundos</h2>
+                <div class="aspect-video bg-white rounded-2xl border-4 border-slate-200 shadow-2xl flex items-center justify-center relative group cursor-pointer overflow-hidden">
+                    <div class="absolute inset-0 bg-slate-900/5 group-hover:bg-slate-900/10 transition"></div>
+                    <div class="relative z-10 text-center">
+                        <div class="w-20 h-20 bg-rose-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition duration-300">
+                            <i data-lucide="play" class="w-8 h-8 text-white fill-current ml-1"></i>
+                        </div>
+                        <p class="font-medium text-lg text-slate-800">Ver Vídeo Pitch</p>
+                    </div>
+                </div>
+                <p class="mt-6 text-slate-500">Presentación del proyecto Mind Up 2025.</p>
+            </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Preguntas Frecuentes</h2>
+                <div class="space-y-4">
+                    <div class="border border-slate-200 rounded-lg p-6 hover:border-teal-500 transition cursor-pointer">
+                        <h4 class="font-bold text-lg mb-2 flex justify-between items-center">¿Es realmente anónimo? <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i></h4>
+                        <p class="text-slate-600">Absolutamente. No guardamos datos personales identificables en los foros y todas las interacciones están encriptadas.</p>
+                    </div>
+                    <div class="border border-slate-200 rounded-lg p-6 hover:border-teal-500 transition cursor-pointer">
+                        <h4 class="font-bold text-lg mb-2 flex justify-between items-center">¿Quién hay detrás del chat? <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400"></i></h4>
+                        <p class="text-slate-600">La IA proporciona el primer nivel de apoyo inmediato, pero los foros están moderados por estudiantes de psicología del último curso supervisados por el COPC.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Team -->
+    <footer id="equip" class="bg-slate-50 border-t border-slate-200 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i data-lucide="brain-circuit" class="text-teal-600 w-6 h-6"></i>
+                        <span class="font-bold text-xl text-slate-900">Mind Up</span>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Haciendo visible lo invisible. Un proyecto para mejorar la vida de los estudiantes dentro y fuera del aula.
+                    </p>
+                </div>
+                
+                <div class="col-span-1 lg:col-span-3">
+                    <h4 class="font-bold text-slate-900 mb-8 text-lg">Equipo Fundador</h4>
+                    <div class="grid sm:grid-cols-3 gap-6">
+                        <!-- Author 1 -->
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-12 h-12 bg-gradient-to-br from-teal-400 to-emerald-400 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                DF
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900">David Fernández</div>
+                                <div class="text-xs text-teal-600 uppercase font-semibold">Co-Founder</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Author 2 -->
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                IV
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900">Izan Velasco</div>
+                                <div class="text-xs text-blue-600 uppercase font-semibold">Co-Founder</div>
+                            </div>
+                        </div>
+
+                        <!-- Author 3 -->
+                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                AA
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900">Arnau Aragón</div>
+                                <div class="text-xs text-purple-600 uppercase font-semibold">Co-Founder</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm">© 2025 Mind Up Project. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-slate-400 hover:text-teal-600 transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-teal-600 transition"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-teal-600 transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
